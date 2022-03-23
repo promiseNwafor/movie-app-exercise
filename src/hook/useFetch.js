@@ -4,12 +4,9 @@ import axios from "axios";
 let pageNo = Math.floor(Math.random() * 100) + 1;
 
 const useFetch = (query) => {
-  const BASE_URL = `https://www.omdbapi.com/?s=${
+  const BASE_URL = `${process.env.REACT_APP_BASE_URL}?s=${
     query || "all"
-  }&page=${pageNo}&apikey=9ce18a4d`;
-  // const BASE_URL = `${process.env.REACT_APP_BASE_URL}?s=${
-  //   query || "all"
-  // }&page=${pageNo}&apikey=${process.env.REACT_APP_API_KEY}`;
+  }&page=${pageNo}&apikey=${process.env.REACT_APP_API_KEY}`;
 
   const [movies, setMovies] = useState([]);
   const [error, setError] = useState(false);
