@@ -4,7 +4,7 @@ import axios from "axios";
 let pageNo = Math.floor(Math.random() * 100) + 1;
 
 const useFetch = (query) => {
-  const BASE_URL = `http://www.omdbapi.com/?s=${
+  const BASE_URL = `https://www.omdbapi.com/?s=${
     query || "all"
   }&page=${pageNo}&apikey=9ce18a4d`;
   // const BASE_URL = `${process.env.REACT_APP_BASE_URL}?s=${
