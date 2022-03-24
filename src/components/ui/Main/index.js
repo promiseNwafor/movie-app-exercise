@@ -17,7 +17,7 @@ const Main = () => {
       spacing={mobileView ? "33px" : "48px"}
     >
       <Search value={query} handleSearch={handleSearch} />
-      <ShowCase category={"all"} query={query.toLocaleLowerCase()} />
+      <ShowCase category={"all"} query={query.toLowerCase()} />
       <ShowCase category={"movie"} />
       <ShowCase category={"series"} />
       <ShowCase category={"episode"} />
