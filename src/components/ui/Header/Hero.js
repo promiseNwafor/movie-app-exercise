@@ -12,7 +12,7 @@ const Hero = () => {
       bgPosition="center"
       bgRepeat="no-repeat"
       bgSize="cover"
-      w="100%"
+      w="100vw"
       h={mobileView ? "257px" : "550px"}
       px={20}
       justifyContent={tabView ? "center" : "initial"}
